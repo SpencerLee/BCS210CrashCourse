@@ -20,7 +20,7 @@ public class DogTest {
 
     @Test
     public void testGetName() throws Exception {
-        
-        assertEquals(testDog.getName(), "Fido");
+        assertEquals(.defaultNumberOfLegs, 4);
+
     }
 }

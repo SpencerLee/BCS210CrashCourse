@@ -5,26 +5,17 @@ package Main;
  */
 public class Dog {
 
-    private String breed;
+    static int defaultNumberOfLegs = 4;
 
-    private String name;
+    public String name;
+    public String breed;
+    private int numberOfLegs;
 
-    public Dog(String breed, String name){
-        // this executes when creating a new object of type Main.Dog
-        this.breed = breed;
+
+    public Dog(String name, String breed){
         this.name = name;
-    }
-
-    public void speak(){
-        System.out.println("Woof");
-    }
-
-    public void printName(){
-        System.out.println(this.name);
-    }
-
-    public String getName(){
-        return this.name;
+        this.breed = breed;
+        this.numberOfLegs = this.defaultNumberOfLegs;
     }
 
 }
