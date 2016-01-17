@@ -13,11 +13,16 @@ public class NumberChecker {
     }
 
     public static void numberChecker(int x) {
+        // if x is greater than 0 print "POSITIVE"
         if(x > 0) {
             System.out.println("POSITIVE");
-        } else if (x < 0) {
+        }
+        // if x is less than zero print "NEGATIVE"
+        else if (x < 0) {
             System.out.println("NEGATIVE");
-        } else {
+        }
+        // otherwise x must be zero so print "ZERO"
+        else {
             System.out.println("ZERO");
         }
     }

@@ -11,11 +11,16 @@ public class LengthChecker {
     }
 
     public static void lengthChecker(String s) {
+        // if s is shorter than 4 letters we print the whole string
         if (s.length() < 4) {
             System.out.println(s);
-        } else if (s.length() >= 4 && s.length() <= 8) {
+        }
+        // if s is between 4 and 8 letters print the first 4 letters then ...
+        else if (s.length() >= 4 && s.length() <= 8) {
             System.out.println(s.substring(0, 4) + "...");
-        } else {
+        }
+        // otherwise print "String too long"
+        else {
             System.out.println("String too long");
         }
     }
