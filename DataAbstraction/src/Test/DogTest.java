@@ -3,9 +3,7 @@ package Test;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
-import Main.*;
 
 /**
  * Created by Spencer Lee on 2016-01-17.
@@ -19,8 +17,12 @@ public class DogTest {
     }
 
     @Test
-    public void testGetName() throws Exception {
-        assertEquals(.defaultNumberOfLegs, 4);
+    public void testGetNumberOfLegs() throws Exception {
+        assertEquals(Dog.getDefaultNumberOfLegs(), 4);
+    }
+
+    @Test
+    public void testSpeak() throws Exception {
 
     }
 }

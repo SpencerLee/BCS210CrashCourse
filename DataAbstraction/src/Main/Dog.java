@@ -18,5 +18,16 @@ public class Dog {
         this.numberOfLegs = this.defaultNumberOfLegs;
     }
 
+    public static int getDefaultNumberOfLegs(){
+        return defaultNumberOfLegs;
+    }
+
+    public void speak(){
+        System.out.println("Woof");
+    }
+
+    public String getName(){
+        return this.name;
+    }
 }
 
